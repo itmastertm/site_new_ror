@@ -100,6 +100,11 @@
          color: #707981;
       }
 
+      .responsive {
+         width: 100%;
+         height: auto;
+      }
+
       @media(max-width:480px) {
 
          .form-left-decoration,
