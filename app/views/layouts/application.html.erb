@@ -7,45 +7,63 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'style', media: 'all' %>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+
   </head>
 
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
+<div class="fixed-top">   
+<div style="background: rgba(121,73,140,1); height: 159px;">
+  <%= link_to root_path, :class => "navbar-brand" do %>
+            <%= image_tag "/images/logo.png", :alt => "", :loading => "lazy", :style => "z-index: 9999; margin-top: -13px; margin-left: -23px" %>
+          <% end %>
+  <br>
+  <br>
+  <div style="margin-top: -270px">
+  <p align="right"><a style="color: white" href="">TKM</a>|<a style="color: white" href="">ENG</a>|<a style="margin-right: 50px; color: white" href="">RUS</a></p>
+  <p align="right" style="margin-right: 50px"><a style="color: white" href="mailto:heykellidiyar@gmail.com">E-mail: heykellidiyar@gmail.com</a></p>
+  <p align="right" style="color: white; margin-right: 50px" >Phone/Fax: + (99312) 95-65-33, 95-54-33</p>
   </div>
-</nav>
+</div> 
+<ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist justify-content-end" style="background: rgba(157,89,82,1); height: 83px">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" style="background: rgba(157,89,82,1); margin-top: 10px" hidden="true">О КОМПАНИИ</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>О КОМПАНИИ</b></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ДЕЯТЕЛЬНОСТЬ</b></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#product" type="button" role="tab" aria-controls="product" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ПРОДУКЦИЯ</b></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#partners" type="button" role="tab" aria-controls="partners" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ПАРТНЁРЫ</b></button>
+  </li><li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white; margin-right: 10px"><b>КОНТАКТЫ</b></button>
+  </li>
+  <span class="badge"><input type="text" placeholder="Поиск" style="margin-right: 50px; height: 20px"></span>
+</ul>
+
+<div class="tab-content nav-shadow" id="myTabContent" style="margin-top: -30px; background: rgba(230,224,224,1); height: 30px; height: 40px;">
+  <div align="center" class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><a href="/posts"><a href="/contacts"></a></div>
+  <div align="center" class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab"><a href="/posts">dasdas</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">dasdas</a></div>
+  <div align="center" class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="contact-tab"><a href="/posts">purpur</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">purpur</a></div>
+  <div align="center" class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="contact-tab"><a href="/posts">hi</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">hi</a></div>
+  <div align="center" class="tab-pane fade" id="partners" role="tabpanel" aria-labelledby="contact-tab"><a href="/posts">WWW</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">WWWW</a></div>
+  <div align="center" class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><a href="/posts">Con</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">Con</a></div>
+  
+</div>
+
+</div>
+<div>
+  
+</div>          
     <%= yield %>
   </body>
 </html>
