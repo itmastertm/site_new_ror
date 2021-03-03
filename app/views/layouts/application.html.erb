@@ -17,17 +17,24 @@
 
   <body>
 <div class="fixed-top">   
-<div style="background: rgba(121,73,140,1); height: 159px;">
-  <%= link_to root_path, :class => "navbar-brand" do %>
+<div style="background: rgba(121,73,140,1); height: 139px;">
+
+ <%= link_to root_path, :class => "navbar-brand" do %>
             <%= image_tag "/images/logo.png", :alt => "", :loading => "lazy", :class => "responsive", :style => "z-index: 9999; margin-top: -13px; margin-left: -23px" %>
           <% end %>
-  <br>
-  <br>
-  <div style="margin-top: -270px">
-  <p align="right"><a style="color: white" href="">TKM</a>|<a style="color: white" href="">ENG</a>|<a style="margin-right: 50px; color: white" href="">RUS</a></p>
-  <p align="right" style="margin-right: 50px"><a style="color: white" href="mailto:heykellidiyar@gmail.com">E-mail: heykellidiyar@gmail.com</a></p>
-  <p align="right" style="color: white; margin-right: 50px" >Phone/Fax: + (99312) 95-65-33, 95-54-33</p>
-  </div>
+  <ul class="nav justify-content-end link-flag">
+      <%= link_to url_for(locale: :tm) do %>
+    <%= image_tag "/images/tm.png", style: "width: 25px; margin-right: 10px"%>
+    <% end %>  
+  <%= link_to url_for(locale: :en) do %>
+    <%= image_tag "/images/en.png", style: "width: 25px; margin-right: 10px" %>
+    <% end %>
+  <%= link_to url_for(locale: :ru) do %>
+    <%= image_tag "/images/ru.png", style: "width: 25px; margin-right: 10px" %>
+    <% end %>
+  </ul>
+    <a class="nav justify-content-end link-flag" style="color: white; margin-top: 25px; margin-left: -10px" href="mailto:heykellidiyar@gmail.com">E-mail: heykellidiyar@gmail.com</a>
+    <p class="nav justify-content-end link-flag" style="color: white; margin-left: -10px; margin-top: 50px" >Phone/Fax: + (99312) 95-65-33, 95-54-33</p>
 </div> 
 <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist justify-content-end" style="background: rgba(157,89,82,1); height: 83px">
   <li class="nav-item" role="presentation">
@@ -63,7 +70,7 @@
 </div>
 <div>
   
-</div>          
+</div>             
     <%= yield %>
   </body>
 </html>

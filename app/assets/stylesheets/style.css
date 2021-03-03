@@ -127,3 +127,14 @@
     padding: 10px;
     z-index: 1;
    }
+      .image-logo {
+   position : relative;
+   width    : 100%; /* for IE 6 */
+}
+
+   .link-flag {
+   position : absolute;
+   top      : 30px;
+   left     : 0;
+   width    : 100%;
+}
