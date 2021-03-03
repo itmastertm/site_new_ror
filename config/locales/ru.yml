@@ -1,0 +1,5 @@
+ru:
+  device:
+    sessions:
+      new:
+        sign_in: "Логин"

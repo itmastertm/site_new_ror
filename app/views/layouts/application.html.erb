@@ -58,19 +58,29 @@
 </ul>
 
 <div class="tab-content nav-shadow" id="myTabContent" style="margin-top: -30px; background: rgba(230,224,224,1); height: 30px; height: 40px;">
-  <div align="center" class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><a href="/posts"><a href="/contacts"></a></div>
-  <div align="center" class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab"><a href="/posts">dasdas</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">dasdas</a></div>
-  <div align="center" class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="contact-tab"><a href="/posts">purpur</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">purpur</a></div>
-  <div align="center" class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="contact-tab"><a href="/posts">hi</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">hi</a></div>
-  <div align="center" class="tab-pane fade" id="partners" role="tabpanel" aria-labelledby="contact-tab"><a href="/posts">WWW</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">WWWW</a></div>
-  <div align="center" class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><a href="/posts">Con</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/contacts">Con</a></div>
+<div align="center" class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><a href="/posts"><a href="/contacts"></a></div>
+<div class="container row tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab">
+    <% @abouts.each do |link|%>
+  <div class="col container">
+    <%= link_to "#{link.name_ru}", about_path(link) %>
+  </div>
+  <% end %>
+</div>
+
+
+
   
 </div>
 
 </div>
 <div>
   
-</div>             
+</div>
+<br><br><br><br><br><br><br><br><br><br>          
     <%= yield %>
   </body>
 </html>
+  <div class="navbar-sm" style="margin-top: -70px; margin-left: 110px">
+  
+  </div>
+  

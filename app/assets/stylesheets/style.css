@@ -127,7 +127,7 @@
     padding: 10px;
     z-index: 1;
    }
-      .image-logo {
+   .image-logo {
    position : relative;
    width    : 100%; /* for IE 6 */
 }
