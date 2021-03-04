@@ -1,8 +1,5 @@
 class ApplicationController < ActionController::Base
-	def index
-		@about = About.all
-	end
-
+	before_action :constant_variable
 	before_action :set_locale
 	private
 
@@ -19,5 +16,10 @@ class ApplicationController < ActionController::Base
 
 	def default_url_options
   		{ locale: I18n.locale }
+	end
+	def constant_variable
+		@abouts = About.all
+		@activities = Activity.all
+		@products = Product.all
 	end
 end

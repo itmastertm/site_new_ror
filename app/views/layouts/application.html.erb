@@ -44,10 +44,10 @@
     <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>О КОМПАНИИ</b></button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ДЕЯТЕЛЬНОСТЬ</b></button>
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button" role="tab" aria-controls="profile" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ДЕЯТЕЛЬНОСТЬ</b></button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#product" type="button" role="tab" aria-controls="product" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ПРОДУКЦИЯ</b></button>
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab" aria-controls="product" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ПРОДУКЦИЯ</b></button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#partners" type="button" role="tab" aria-controls="partners" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ПАРТНЁРЫ</b></button>
@@ -58,18 +58,34 @@
 </ul>
 
 <div class="tab-content nav-shadow" id="myTabContent" style="margin-top: -30px; background: rgba(230,224,224,1); height: 30px; height: 40px;">
-<div align="center" class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><a href="/posts"><a href="/contacts"></a></div>
-<div class="container row tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab">
-    <% @abouts.each do |link|%>
-  <div class="col container">
-    <%= link_to "#{link.name_ru}", about_path(link) %>
+  <div align="center" class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab">
+    <% @abouts.each do |link| %>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
+      <%= link_to "#{link.name_en}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
+      <%= link_to "#{link.name_tm}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
+
+    <% end %>
   </div>
-  <% end %>
-</div>
-
-
-
-  
+  <div align="center" class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="profile-tab">
+    <% @activities.each do |link| %>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
+      <%= link_to "#{link.name_en}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
+      <%= link_to "#{link.name_tm}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
+    <% end %>
+  </div>
+    <div align="center" class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="profile-tab">
+    <% @products.each do |link| %>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
+      <%= link_to "#{link.name_en}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
+      <%= link_to "#{link.name_tm}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
+    <% end %>
+  </div>      
 </div>
 
 </div>
@@ -80,7 +96,7 @@
     <%= yield %>
   </body>
 </html>
-  <div class="navbar-sm" style="margin-top: -70px; margin-left: 110px">
   
-  </div>
+
+
   
