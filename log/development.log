@@ -28713,3 +28713,235 @@ Processing by AboutsController#show as HTML
 Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/ru/abouts/1" for ::1 at 2021-03-04 06:04:57 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by AboutsController#show as HTML
+  Parameters: {"locale"=>"ru", "id"=>"1"}
+  Rendering abouts/show.html.erb within layouts/application
+  Rendered abouts/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 502ms (Views: 484.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/?locale=ru" for ::1 at 2021-03-04 06:05:07 -0800
+Processing by IndexController#index as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/index/index.html.erb:3
+  Rendered index/index.html.erb within layouts/application (11.1ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin" for ::1 at 2021-03-04 06:05:13 -0800
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "abouts"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT  "activities".* FROM "activities" ORDER BY "activities"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_attachments"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" ORDER BY "active_storage_attachments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_blobs"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY "active_storage_blobs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "partners"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPartner Load (0.1ms)[0m  [1m[34mSELECT  "partners".* FROM "partners" ORDER BY "partners"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (23.1ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (121.6ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.0ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (7.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.9ms)
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (3.2ms)
+Completed 200 OK in 396ms (Views: 171.8ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/users/sign_out?locale=ru" for ::1 at 2021-03-04 06:05:25 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tBlFcdQ0FDI6go3AsdpGIix/hTgo+gyd/mKgZGzM8y66uxiSb9Knr8U8nX62PRbci2e+Ty2rrVOewl4CbkHeLA==", "locale"=>"ru"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/?locale=ru
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/?locale=ru" for ::1 at 2021-03-04 06:05:25 -0800
+Processing by IndexController#index as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.9ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:05:27 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.0ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 82ms (Views: 79.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:13:21 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  [1m[36mAbout Load (0.3ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:13:23 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:13:24 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:15:45 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.4ms)
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 531ms (Views: 469.9ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:15:58 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GeVbVLnx/68OPFsai/59JkJOQwyTvTCdySaUltg/122YXHPl049B/cDJnYI5an8TI7cATbXs8mKBBDCPKZl87w==", "user"=>{"email"=>"egorarbuzov@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Войти", "locale"=>"ru"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "egorarbuzov@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 246ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GeVbVLnx/68OPFsai/59JkJOQwyTvTCdySaUltg/122YXHPl049B/cDJnYI5an8TI7cATbXs8mKBBDCPKZl87w==", "user"=>{"email"=>"egorarbuzov@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Войти", "locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  [1m[36mAbout Load (0.4ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 274ms (Views: 63.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:16:05 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OI/ywTeo5ZXM9DbWaeLZ5K6iO0xu6bUrFhchhTcXI6e5NtpwXdZbxwIB8E7bdtvRz1t4DUi4d9ReNYWcxrGIJQ==", "user"=>{"email"=>"egorarbuzov@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Войти", "locale"=>"ru"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "egorarbuzov@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2021-03-04 14:16:06.173009"], ["updated_at", "2021-03-04 14:16:06.174042"], ["id", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/?locale=ru
+Completed 302 Found in 228ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/?locale=ru" for ::1 at 2021-03-04 06:16:06 -0800
+Processing by IndexController#index as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/index/index.html.erb:3
+  Rendered index/index.html.erb within layouts/application (1.9ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.4ms)
+
+
