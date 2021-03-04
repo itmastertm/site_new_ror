@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'index/index'
   	scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
 	  resources :abouts
-	  resources :activities, only: :show
+	  resources :activity, only: :show
 	  resources :products, only: :show
 	  resources :partners, only: :show
 	  resources :contacts

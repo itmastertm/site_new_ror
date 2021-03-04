@@ -71,19 +71,19 @@
   <div align="center" class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="profile-tab">
     <% @activities.each do |link| %>
     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
-      <%= link_to "#{link.name_en}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
-      <%= link_to "#{link.name_tm}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
+      <%= link_to "#{link.name_ru}", activity_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+      <%= link_to "#{link.name_ru}", activity_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
+      <%= link_to "#{link.name_en}", activity_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
+      <%= link_to "#{link.name_tm}", activity_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
     <% end %>
   </div>
     <div align="center" class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="profile-tab">
     <% @products.each do |link| %>
     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
-      <%= link_to "#{link.name_en}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
-      <%= link_to "#{link.name_tm}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
+      <%= link_to "#{link.name_ru}", product_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+      <%= link_to "#{link.name_ru}", product_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
+      <%= link_to "#{link.name_en}", product_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
+      <%= link_to "#{link.name_tm}", product_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
     <% end %>
   </div>      
 </div>
