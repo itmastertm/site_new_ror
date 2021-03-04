@@ -29097,3 +29097,1192 @@ Processing by IndexController#index as HTML
 Completed 200 OK in 343ms (Views: 340.3ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:30:44 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 70ms (Views: 61.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:30:50 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ms0V0GiujFLrBZUgkwCfb4PpLdGNIn5Y/n1oPG0+Uocqrprb0vH15sEe9owbmlqOqr2q2+IDhtWY/TdRiHRPBw==", "user"=>{"email"=>"itmastertm@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти", "locale"=>"ru"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "itmastertm@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ms0V0GiujFLrBZUgkwCfb4PpLdGNIn5Y/n1oPG0+Uocqrprb0vH15sEe9owbmlqOqr2q2+IDhtWY/TdRiHRPBw==", "user"=>{"email"=>"itmastertm@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти", "locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 275ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:31:04 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ll9PIYPVAkUioXSO+yFctowzN0XQJzHNohnvgRYMpXfcZ0YCdKjCQD+aOWx6lEMjZoKyJ8bO+a7ZSfj8XRbrAQ==", "user"=>{"email"=>"egorarbuzov@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти", "locale"=>"ru"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "egorarbuzov@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/?locale=ru
+Completed 302 Found in 205ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/?locale=ru" for ::1 at 2021-03-04 06:31:04 -0800
+Processing by IndexController#index as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/index/index.html.erb:3
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for ::1 at 2021-03-04 06:37:23 -0800
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "abouts"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT  "activities".* FROM "activities" ORDER BY "activities"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_attachments"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" ORDER BY "active_storage_attachments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_blobs"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY "active_storage_blobs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "partners"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPartner Load (0.1ms)[0m  [1m[34mSELECT  "partners".* FROM "partners" ORDER BY "partners"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (43.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (133.6ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.6ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (9.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.9ms)
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (3.5ms)
+Completed 200 OK in 464ms (Views: 240.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 06:37:29 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (49.9ms)
+Completed 200 OK in 71ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 06:37:43 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY products.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (49.7ms)
+Completed 200 OK in 63ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/product/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 06:37:57 -0800
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (1.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (1.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_file_upload.html.haml (8.0ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_multiple_file_upload.html.haml (3.5ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (6.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (55.1ms)
+Completed 200 OK in 66ms (Views: 62.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 06:38:00 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY products.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (40.1ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-04 06:39:47 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/index/index.html.erb:3
+  Rendered index/index.html.erb within layouts/application (23.1ms)
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 391ms (Views: 373.5ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/users/sign_out?locale=ru" for ::1 at 2021-03-04 06:40:01 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iVzHqwMAWi9PqymHb66DiQWmURLBK9aHe7gr1pHazyHmDR4B/sBtz/qdum6ZYIvKoFNFA6z2glG2hllgKSPGxw==", "locale"=>"ru"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/?locale=ru
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/?locale=ru" for ::1 at 2021-03-04 06:40:01 -0800
+Processing by IndexController#index as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.5ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:40:03 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-04 06:40:29 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.6ms)
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 375ms (Views: 358.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:40:31 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/vito/Desktop/site_new_ror/config/locales/ru.yml: expects it to return a hash, but does not):
+    1: <h1><%= t('.sign_in') %></h1>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="form-group">
+  
+app/views/devise/sessions/new.html.erb:1:in `_app_views_devise_sessions_new_html_erb___942528285444361661_24320'
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:43:05 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/vito/Desktop/site_new_ror/config/locales/ru.yml: expects it to return a hash, but does not):
+    1: <h1><%= t('.sign_in') %></h1>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="form-group">
+  
+app/views/devise/sessions/new.html.erb:1:in `_app_views_devise_sessions_new_html_erb___942528285444361661_28460'
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:43:13 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/vito/Desktop/site_new_ror/config/locales/ru.yml: expects it to return a hash, but does not):
+    1: <h1><%= t('.sign_in') %></h1>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="form-group">
+  
+app/views/devise/sessions/new.html.erb:1:in `_app_views_devise_sessions_new_html_erb___942528285444361661_29020'
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 06:43:53 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.1ms)
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 122ms (Views: 104.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/sign_in?locale=ru" for ::1 at 2021-03-04 08:14:18 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (64.4ms)
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 449ms (Views: 415.9ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/users/sign_in?locale=ru" for ::1 at 2021-03-04 08:14:30 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vftGEZPV+EY+HSm+A6ahu9vCowhejLu7CRxUpud2XLJsxmPBMM4rfOjh1/MexJ4/f6l7NyGDpbxlozrEKptBqg==", "user"=>{"email"=>"egorarbuzov@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Войти", "locale"=>"ru"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "egorarbuzov@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2021-03-04 16:14:31.086279"], ["updated_at", "2021-03-04 16:14:31.087485"], ["id", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/?locale=ru
+Completed 302 Found in 224ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/?locale=ru" for ::1 at 2021-03-04 08:14:31 -0800
+Processing by IndexController#index as HTML
+  Parameters: {"locale"=>"ru"}
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/index/index.html.erb:3
+  Rendered index/index.html.erb within layouts/application (1.7ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/layouts/application.html.erb:62
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/layouts/application.html.erb:72
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/layouts/application.html.erb:81
+Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for ::1 at 2021-03-04 08:14:39 -0800
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "abouts"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT  "activities".* FROM "activities" ORDER BY "activities"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_attachments"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" ORDER BY "active_storage_attachments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_blobs"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY "active_storage_blobs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "partners"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPartner Load (0.1ms)[0m  [1m[34mSELECT  "partners".* FROM "partners" ORDER BY "partners"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (20.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (113.6ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.8ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (7.8ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.4ms)
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (3.5ms)
+Completed 200 OK in 394ms (Views: 162.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/about?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:14:54 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"about"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" ORDER BY abouts.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (46.2ms)
+Completed 200 OK in 60ms (Views: 52.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/activity?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:14:59 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"activity"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT  "activities".* FROM "activities" ORDER BY activities.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (36.9ms)
+Completed 200 OK in 47ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:15:00 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY products.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (49.4ms)
+Completed 200 OK in 61ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:15:01 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (37.2ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/active_storage~attachment?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:15:04 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"active_storage~attachment"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" ORDER BY active_storage_attachments.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" IN (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 8], ["id", 7], ["id", 6], ["id", 5], ["id", 4], ["id", 3], ["id", 2], ["id", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (97.0ms)
+Completed 200 OK in 107ms (Views: 103.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/active_storage~attachment/8/edit?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:15:14 -0800
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"active_storage~attachment", "id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ? ORDER BY "active_storage_attachments"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (1.7ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_polymorphic_association.html.haml (8.2ms)
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_blobs"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY active_storage_blobs.id desc[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_filtering_select.html.haml (6.1ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (12.5ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (37.3ms)
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/active_storage~attachment/8/show_in_app" for ::1 at 2021-03-04 08:15:20 -0800
+Processing by RailsAdmin::MainController#show_in_app as HTML
+  Parameters: {"model_name"=>"active_storage~attachment", "id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ? ORDER BY "active_storage_attachments"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d19f3b542344ee226d135bcf08eec5b27e97f619/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d19f3b542344ee226d135bcf08eec5b27e97f619/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg" for ::1 at 2021-03-04 08:15:20 -0800
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d19f3b542344ee226d135bcf08eec5b27e97f619", "filename"=>"turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.7ms) [0m[34mGenerated URL for file at key: DFNdmZXBHw5TkXrwRcBSMEzb (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRSRVpPWkcxYVdFSklkelZVYTFoeWQxSmpRbE5OUlhwaUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJwR2x1YkdsdVpUc2dabWxzWlc1aGJXVTlJblIxY210dFpXNXBjM1JoYmkxMWMzQmxjMmh1YnkxaWIzSmxkSE5xWVMxekxXSmxlbWR5WVhwb1pHRnVjM1IyYjIwdGNHaHZkRzh0WW1sbkxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuZEhWeWEyMWxibWx6ZEdGdUxYVnpjR1Z6YUc1dkxXSnZjbVYwYzJwaExYTXRZbVY2WjNKaGVtaGtZVzV6ZEhadmJTMXdhRzkwYnkxaWFXY3VhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0wNFQxNjoyMDoyMC4yNDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--243714e1536f8243af736a8b52ae40394f4676e4/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg%22%3B+filename%2A%3DUTF-8%27%27turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRSRVpPWkcxYVdFSklkelZVYTFoeWQxSmpRbE5OUlhwaUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJwR2x1YkdsdVpUc2dabWxzWlc1aGJXVTlJblIxY210dFpXNXBjM1JoYmkxMWMzQmxjMmh1YnkxaWIzSmxkSE5xWVMxekxXSmxlbWR5WVhwb1pHRnVjM1IyYjIwdGNHaHZkRzh0WW1sbkxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuZEhWeWEyMWxibWx6ZEdGdUxYVnpjR1Z6YUc1dkxXSnZjbVYwYzJwaExYTXRZbVY2WjNKaGVtaGtZVzV6ZEhadmJTMXdhRzkwYnkxaWFXY3VhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0wNFQxNjoyMDoyMC4yNDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--243714e1536f8243af736a8b52ae40394f4676e4/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg%22%3B+filename%2A%3DUTF-8%27%27turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRSRVpPWkcxYVdFSklkelZVYTFoeWQxSmpRbE5OUlhwaUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJwR2x1YkdsdVpUc2dabWxzWlc1aGJXVTlJblIxY210dFpXNXBjM1JoYmkxMWMzQmxjMmh1YnkxaWIzSmxkSE5xWVMxekxXSmxlbWR5WVhwb1pHRnVjM1IyYjIwdGNHaHZkRzh0WW1sbkxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuZEhWeWEyMWxibWx6ZEdGdUxYVnpjR1Z6YUc1dkxXSnZjbVYwYzJwaExYTXRZbVY2WjNKaGVtaGtZVzV6ZEhadmJTMXdhRzkwYnkxaWFXY3VhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0wNFQxNjoyMDoyMC4yNDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--243714e1536f8243af736a8b52ae40394f4676e4/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg%22%3B+filename%2A%3DUTF-8%27%27turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg" for ::1 at 2021-03-04 08:15:20 -0800
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg\"; filename*=UTF-8''turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRSRVpPWkcxYVdFSklkelZVYTFoeWQxSmpRbE5OUlhwaUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJwR2x1YkdsdVpUc2dabWxzWlc1aGJXVTlJblIxY210dFpXNXBjM1JoYmkxMWMzQmxjMmh1YnkxaWIzSmxkSE5xWVMxekxXSmxlbWR5WVhwb1pHRnVjM1IyYjIwdGNHaHZkRzh0WW1sbkxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuZEhWeWEyMWxibWx6ZEdGdUxYVnpjR1Z6YUc1dkxXSnZjbVYwYzJwaExYTXRZbVY2WjNKaGVtaGtZVzV6ZEhadmJTMXdhRzkwYnkxaWFXY3VhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0wNFQxNjoyMDoyMC4yNDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--243714e1536f8243af736a8b52ae40394f4676e4", "filename"=>"turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/active_storage~attachment/8/edit" for ::1 at 2021-03-04 08:15:26 -0800
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"active_storage~attachment", "id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ? ORDER BY "active_storage_attachments"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/application
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (1.6ms)
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_polymorphic_association.html.haml (6.6ms)
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY active_storage_blobs.id desc[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_filtering_select.html.haml (7.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (6.9ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/application (34.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (86.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.1ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (10.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.0ms)
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (10.1ms)
+Completed 200 OK in 159ms (Views: 155.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:15:28 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY products.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (44.4ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/product/export?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:15:35 -0800
+Processing by RailsAdmin::MainController#export as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/pjax
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT '' AS str;[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/pjax (23.7ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/product/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:15:40 -0800
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (1.9ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (1.5ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.4ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_file_upload.html.haml (7.5ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_multiple_file_upload.html.haml (4.6ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (5.8ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (48.3ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:15:48 -0800
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "abouts"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT  "activities".* FROM "activities" ORDER BY "activities"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_attachments"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" ORDER BY "active_storage_attachments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_blobs"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY "active_storage_blobs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "partners"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPartner Load (0.0ms)[0m  [1m[34mSELECT  "partners".* FROM "partners" ORDER BY "partners"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (15.5ms)
+Completed 200 OK in 46ms (Views: 29.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/activity?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:05 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"activity"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT  "activities".* FROM "activities" ORDER BY activities.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (46.4ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/activity/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:08 -0800
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"activity"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (2.8ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.9ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (1.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_file_upload.html.haml (8.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_multiple_file_upload.html.haml (2.9ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (6.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (47.7ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/activity/export?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:10 -0800
+Processing by RailsAdmin::MainController#export as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"activity"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/pjax
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT '' AS str;[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/pjax (20.0ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/activity?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:21 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"activity"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT  "activities".* FROM "activities" ORDER BY activities.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (39.5ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/partner?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:35 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"partner"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPartner Load (0.2ms)[0m  [1m[34mSELECT  "partners".* FROM "partners" ORDER BY partners.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (27.7ms)
+Completed 200 OK in 45ms (Views: 34.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:36 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY products.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (43.6ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/partner?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:37 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"partner"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPartner Load (0.2ms)[0m  [1m[34mSELECT  "partners".* FROM "partners" ORDER BY partners.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (28.1ms)
+Completed 200 OK in 47ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/about?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:38 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"about"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAbout Load (0.3ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" ORDER BY abouts.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (38.5ms)
+Completed 200 OK in 52ms (Views: 44.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/about/3?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:44 -0800
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"about", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? ORDER BY "abouts"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "About"], ["name", "image"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 3], ["record_type", "About"], ["name", "images"]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (10.5ms)
+Completed 200 OK in 28ms (Views: 21.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/about/3/edit?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:21:50 -0800
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"about", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? ORDER BY "abouts"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (2.5ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.8ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (1.8ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "About"], ["name", "image"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_file_upload.html.haml (4.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 3], ["record_type", "About"], ["name", "images"]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_multiple_file_upload.html.haml (4.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (7.6ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (51.6ms)
+Completed 200 OK in 66ms (Views: 61.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/about/3/show_in_app" for ::1 at 2021-03-04 08:22:03 -0800
+Processing by RailsAdmin::MainController#show_in_app as HTML
+  Parameters: {"model_name"=>"about", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? ORDER BY "abouts"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/3/abouts/3
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/3/abouts/3" for ::1 at 2021-03-04 08:22:03 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/3/abouts/3"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/about/3/edit" for ::1 at 2021-03-04 08:22:28 -0800
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"about", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? ORDER BY "abouts"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/application
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (1.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (4.0ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.5ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (0.8ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "About"], ["name", "image"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_file_upload.html.haml (6.6ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 3], ["record_type", "About"], ["name", "images"]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_multiple_file_upload.html.haml (3.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (6.5ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/application (45.9ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (94.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.9ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (11.3ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.5ms)
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (7.2ms)
+Completed 200 OK in 181ms (Views: 177.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/about/3?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:22:31 -0800
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"about", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? ORDER BY "abouts"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "About"], ["name", "image"], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 3], ["record_type", "About"], ["name", "images"]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (7.8ms)
+Completed 200 OK in 27ms (Views: 19.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/active_storage~blob?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:22:42 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"active_storage~blob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY active_storage_blobs.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (58.3ms)
+Completed 200 OK in 77ms (Views: 73.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/active_storage~attachment?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:22:47 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"active_storage~attachment"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" ORDER BY active_storage_attachments.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" IN (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 8], ["id", 7], ["id", 6], ["id", 5], ["id", 4], ["id", 3], ["id", 2], ["id", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (73.4ms)
+Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/active_storage~blob?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:22:48 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"active_storage~blob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY active_storage_blobs.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (62.8ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:22:58 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (37.2ms)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/user?model_name=user&set=1&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:23:10 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user", "set"=>"1", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (33.3ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/user?model_name=user&set=1" for ::1 at 2021-03-04 08:36:15 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user", "set"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /home/vito/Desktop/site_new_ror/config/locales/ru.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 1 column 1>):
+  
+i18n (1.8.8) lib/i18n/backend/base.rb:245:in `rescue in load_yml'
+i18n (1.8.8) lib/i18n/backend/base.rb:241:in `load_yml'
+i18n (1.8.8) lib/i18n/backend/base.rb:226:in `load_file'
+i18n (1.8.8) lib/i18n/backend/base.rb:18:in `block in load_translations'
+i18n (1.8.8) lib/i18n/backend/base.rb:18:in `each'
+i18n (1.8.8) lib/i18n/backend/base.rb:18:in `load_translations'
+i18n (1.8.8) lib/i18n/backend/simple.rb:80:in `init_translations'
+i18n (1.8.8) lib/i18n/backend/simple.rb:90:in `lookup'
+i18n (1.8.8) lib/i18n/backend/base.rb:32:in `translate'
+i18n (1.8.8) lib/i18n/backend/fallbacks.rb:50:in `block (2 levels) in translate'
+i18n (1.8.8) lib/i18n/backend/fallbacks.rb:49:in `catch'
+i18n (1.8.8) lib/i18n/backend/fallbacks.rb:49:in `block in translate'
+i18n (1.8.8) lib/i18n/backend/fallbacks.rb:47:in `each'
+i18n (1.8.8) lib/i18n/backend/fallbacks.rb:47:in `translate'
+i18n (1.8.8) lib/i18n.rb:207:in `block in translate'
+i18n (1.8.8) lib/i18n.rb:203:in `catch'
+i18n (1.8.8) lib/i18n.rb:203:in `translate'
+rails_admin (2.0.2) app/helpers/rails_admin/application_helper.rb:65:in `wording_for'
+rails_admin (2.0.2) app/controllers/rails_admin/main_controller.rb:20:in `index'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+railties (5.2.4.5) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.4.5) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-pjax (1.1.0) lib/rack/pjax.rb:12:in `call'
+remotipart (1.4.4) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/user?model_name=user&set=1" for ::1 at 2021-03-04 08:39:09 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user", "set"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (38.0ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (113.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.7ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (10.1ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (30.4ms)
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (15.3ms)
+Completed 200 OK in 251ms (Views: 221.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:39:17 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY products.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (65.8ms)
+Completed 200 OK in 87ms (Views: 79.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/active_storage~attachment?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:39:20 -0800
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"active_storage~attachment"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" ORDER BY active_storage_attachments.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" IN (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 8], ["id", 7], ["id", 6], ["id", 5], ["id", 4], ["id", 3], ["id", 2], ["id", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAbout Load (0.5ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (113.8ms)
+Completed 200 OK in 129ms (Views: 120.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/active_storage~attachment/8?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:39:34 -0800
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"active_storage~attachment", "id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ? ORDER BY "active_storage_attachments"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  [1m[36mAbout Load (0.1ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (8.6ms)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/active_storage~attachment/8/edit?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2021-03-04 08:39:39 -0800
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"active_storage~attachment", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ? ORDER BY "active_storage_attachments"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (1.6ms)
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT  "abouts".* FROM "abouts" WHERE "abouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_polymorphic_association.html.haml (8.7ms)
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY active_storage_blobs.id desc[0m
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_filtering_select.html.haml (8.5ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (5.8ms)
+  Rendered /home/vito/.rvm/gems/ruby-2.7.1/gems/rails_admin-2.0.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (33.5ms)
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/active_storage~attachment/8/show_in_app" for ::1 at 2021-03-04 08:39:46 -0800
+Processing by RailsAdmin::MainController#show_in_app as HTML
+  Parameters: {"model_name"=>"active_storage~attachment", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:5
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ? ORDER BY "active_storage_attachments"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d19f3b542344ee226d135bcf08eec5b27e97f619/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d19f3b542344ee226d135bcf08eec5b27e97f619/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg" for ::1 at 2021-03-04 08:39:46 -0800
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d19f3b542344ee226d135bcf08eec5b27e97f619", "filename"=>"turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/vito/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.9ms) [0m[34mGenerated URL for file at key: DFNdmZXBHw5TkXrwRcBSMEzb (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRSRVpPWkcxYVdFSklkelZVYTFoeWQxSmpRbE5OUlhwaUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJwR2x1YkdsdVpUc2dabWxzWlc1aGJXVTlJblIxY210dFpXNXBjM1JoYmkxMWMzQmxjMmh1YnkxaWIzSmxkSE5xWVMxekxXSmxlbWR5WVhwb1pHRnVjM1IyYjIwdGNHaHZkRzh0WW1sbkxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuZEhWeWEyMWxibWx6ZEdGdUxYVnpjR1Z6YUc1dkxXSnZjbVYwYzJwaExYTXRZbVY2WjNKaGVtaGtZVzV6ZEhadmJTMXdhRzkwYnkxaWFXY3VhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0wNFQxNjo0NDo0Ni4zMDRaIiwicHVyIjoiYmxvYl9rZXkifX0=--226a97e7fe5a0417ab44654895c0315950d1432b/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg%22%3B+filename%2A%3DUTF-8%27%27turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRSRVpPWkcxYVdFSklkelZVYTFoeWQxSmpRbE5OUlhwaUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJwR2x1YkdsdVpUc2dabWxzWlc1aGJXVTlJblIxY210dFpXNXBjM1JoYmkxMWMzQmxjMmh1YnkxaWIzSmxkSE5xWVMxekxXSmxlbWR5WVhwb1pHRnVjM1IyYjIwdGNHaHZkRzh0WW1sbkxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuZEhWeWEyMWxibWx6ZEdGdUxYVnpjR1Z6YUc1dkxXSnZjbVYwYzJwaExYTXRZbVY2WjNKaGVtaGtZVzV6ZEhadmJTMXdhRzkwYnkxaWFXY3VhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0wNFQxNjo0NDo0Ni4zMDRaIiwicHVyIjoiYmxvYl9rZXkifX0=--226a97e7fe5a0417ab44654895c0315950d1432b/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg%22%3B+filename%2A%3DUTF-8%27%27turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRSRVpPWkcxYVdFSklkelZVYTFoeWQxSmpRbE5OUlhwaUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJwR2x1YkdsdVpUc2dabWxzWlc1aGJXVTlJblIxY210dFpXNXBjM1JoYmkxMWMzQmxjMmh1YnkxaWIzSmxkSE5xWVMxekxXSmxlbWR5WVhwb1pHRnVjM1IyYjIwdGNHaHZkRzh0WW1sbkxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuZEhWeWEyMWxibWx6ZEdGdUxYVnpjR1Z6YUc1dkxXSnZjbVYwYzJwaExYTXRZbVY2WjNKaGVtaGtZVzV6ZEhadmJTMXdhRzkwYnkxaWFXY3VhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0wNFQxNjo0NDo0Ni4zMDRaIiwicHVyIjoiYmxvYl9rZXkifX0=--226a97e7fe5a0417ab44654895c0315950d1432b/turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg%22%3B+filename%2A%3DUTF-8%27%27turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg" for ::1 at 2021-03-04 08:39:46 -0800
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg\"; filename*=UTF-8''turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRSRVpPWkcxYVdFSklkelZVYTFoeWQxSmpRbE5OUlhwaUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJwR2x1YkdsdVpUc2dabWxzWlc1aGJXVTlJblIxY210dFpXNXBjM1JoYmkxMWMzQmxjMmh1YnkxaWIzSmxkSE5xWVMxekxXSmxlbWR5WVhwb1pHRnVjM1IyYjIwdGNHaHZkRzh0WW1sbkxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuZEhWeWEyMWxibWx6ZEdGdUxYVnpjR1Z6YUc1dkxXSnZjbVYwYzJwaExYTXRZbVY2WjNKaGVtaGtZVzV6ZEhadmJTMXdhRzkwYnkxaWFXY3VhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0wNFQxNjo0NDo0Ni4zMDRaIiwicHVyIjoiYmxvYl9rZXkifX0=--226a97e7fe5a0417ab44654895c0315950d1432b", "filename"=>"turkmenistan-uspeshno-boretsja-s-bezgrazhdanstvom-photo-big"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
