@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<% @partners.each do |partner| %>
+		<div class="col-3 ">
+			<div class="card" style="width: 250px">
+				<p align="center"><%= image_tag partner.image, style: "width: 240px; height: 150px"%></p>
+				<div class="card-body">
+					<h5 align="center" class="card-title" style="height: 100px">
+						<%= "#{partner.name_ru}" if params[:locale] == 'ru' %>
+						<%= "#{partner.name_en}" if params[:locale] == 'en' %>
+						<%= "#{partner.name_tm}" if params[:locale] == 'tm' %>
+					</h5>	
+				</div>	
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>

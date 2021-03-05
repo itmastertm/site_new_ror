@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 	  resources :abouts
 	  resources :activity, only: :show
 	  resources :products, only: :show
-	  resources :partners, only: :show
+	  resources :partners, only: :index
 	  resources :contacts
 	end  
   root to: "index#index"
