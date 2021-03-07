@@ -12,87 +12,58 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 
+  <link rel="shortcut icon" href="assets/images/-1-121x125.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="assets/datepicker/jquery.datetimepicker.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
 
   </head>
 
   <body>
-<div class="fixed-top">   
-<div style="background: rgba(121,73,140,1); height: 139px;">
+  <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://mobiri.se">
+                        <img src="assets/images/-1-121x125.png" alt="Mobirise" style="height: 8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white text-primary display-5" href="index.html">HEYKELLI DIYAR</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#content14-r" aria-expanded="false">О КОМПАНИИ</a></li><li class="nav-item dropdown"><a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="true" data-toggle="dropdown-submenu">ДЕЯТЕЛЬНОСТЬ</a><div class="dropdown-menu"><a class="text-white text-primary dropdown-item display-4" href="#" aria-expanded="true">Экспедиторские услуги</a><a class="text-white text-primary dropdown-item display-4" href="#" aria-expanded="true">Аренда автотехники</a><a class="text-white text-primary dropdown-item display-4" href="#" aria-expanded="true">Аренда складских помещений</a><a class="text-white text-primary dropdown-item display-4" href="#" aria-expanded="true">Проектные услуги</a><a class="text-white text-primary dropdown-item display-4" href="#" aria-expanded="true">Строительные работы</a><a class="text-white text-primary dropdown-item display-4" href="#" aria-expanded="true">Дизайнерские услуги</a></div></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="page1.html" aria-expanded="false">ПРОДУКЦИЯ<br></a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#gallery2-m" aria-expanded="false">ПАРТНЁРЫ</a></li><li class="nav-item dropdown"><a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="false" data-toggle="dropdown-submenu">СВЯЗАТЬСЯ&nbsp; С НАМИ</a><div class="dropdown-menu"><a class="text-white text-primary dropdown-item display-4" href="index.html#form5-u" aria-expanded="false"><span class="socicon socicon-outlook mbr-iconfont mbr-iconfont-btn"></span>НАПИШИТЕ НАМ</a><a class="text-white text-primary dropdown-item display-4" href="index.html#form5-u" aria-expanded="false"><span class="socicon socicon-viber mbr-iconfont mbr-iconfont-btn"></span>НАШИ КОНТАКТЫ</a></div></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
 
- <%= link_to root_path, :class => "navbar-brand" do %>
-            <%= image_tag "/images/logo.png", :alt => "", :loading => "lazy", :class => "responsive", :style => "z-index: 9999; margin-top: -13px; margin-left: -23px" %>
-          <% end %>
-  <ul class="nav justify-content-end link-flag">
-      <%= link_to url_for(locale: :tm) do %>
-    <%= image_tag "/images/tm.png", style: "width: 25px; margin-right: 10px"%>
-    <% end %>  
-  <%= link_to url_for(locale: :en) do %>
-    <%= image_tag "/images/en.png", style: "width: 25px; margin-right: 10px" %>
-    <% end %>
-  <%= link_to url_for(locale: :ru) do %>
-    <%= image_tag "/images/ru.png", style: "width: 25px; margin-right: 10px" %>
-    <% end %>
-  </ul>
-    <a class="nav justify-content-end link-flag" style="color: white; margin-top: 25px; margin-left: -10px" href="mailto:heykellidiyar@gmail.com">E-mail: heykellidiyar@gmail.com</a>
-    <p class="nav justify-content-end link-flag" style="color: white; margin-left: -10px; margin-top: 50px" >Phone/Fax: + (99312) 95-65-33, 95-54-33</p>
-</div> 
-<ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist justify-content-end" style="background: rgba(157,89,82,1); height: 83px">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" style="background: rgba(157,89,82,1); margin-top: 10px" hidden="true">О КОМПАНИИ</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>О КОМПАНИИ</b></button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button" role="tab" aria-controls="profile" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ДЕЯТЕЛЬНОСТЬ</b></button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab" aria-controls="product" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white"><b>ПРОДУКЦИЯ</b></button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <b><%= link_to 'ПАРТНЁРЫ', partners_path, :class => "nav-link", :style => "background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white" %></b>
-  </li><li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" style="background: rgba(157,89,82,1); margin-top: 10px; font-size: 15px; font-family: Arial; color: white; margin-right: 10px"><b>КОНТАКТЫ</b></button>
-  </li>
-  <span class="badge"><input type="text" placeholder="Поиск" style="margin-right: 50px; height: 20px"></span>
-</ul>
+</section>
 
-<div class="tab-content nav-shadow" id="myTabContent" style="margin-top: -30px; background: rgba(230,224,224,1); height: 30px; height: 40px;">
-  <div align="center" class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab">
-    <% @abouts.each do |link| %>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-      <%= link_to "#{link.name_ru}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
-      <%= link_to "#{link.name_en}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
-      <%= link_to "#{link.name_tm}", about_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
-
-    <% end %>
-  </div>
-  <div align="center" class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="profile-tab">
-    <% @activities.each do |link| %>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <%= link_to "#{link.name_ru}", activity_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-      <%= link_to "#{link.name_ru}", activity_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
-      <%= link_to "#{link.name_en}", activity_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
-      <%= link_to "#{link.name_tm}", activity_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
-    <% end %>
-  </div>
-    <div align="center" class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="profile-tab">
-    <% @products.each do |link| %>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <%= link_to "#{link.name_ru}", product_path(link), :class => "btn btn-success btn-sm" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-      <%= link_to "#{link.name_ru}", product_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'ru' %>
-      <%= link_to "#{link.name_en}", product_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'en' %>
-      <%= link_to "#{link.name_tm}", product_path(link), :class => "btn btn-success btn-sm" if params[:locale] == 'tm' %>
-    <% end %>
-  </div>      
-</div>
-
-</div>
-<div>
-  
-</div>
-<br><br><br><br><br><br><br><br><br><br>          
     <%= yield %>
   </body>
 </html>

@@ -1,9 +1,10 @@
+
 <div class="container">
 	<div class="row">
 		<% @partners.each do |partner| %>
 		<div class="col-3 ">
-			<div class="card" style="width: 250px">
-				<p align="center"><%= image_tag partner.image, style: "width: 240px; height: 150px"%></p>
+			<div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 250px">
+				<p align="center"><%= image_tag partner.image, style: "width: 200px; height: 150px"%></p>
 				<div class="card-body">
 					<h5 align="center" class="card-title" style="height: 100px">
 						<%= "#{partner.name_ru}" if params[:locale] == 'ru' %>
@@ -16,3 +17,5 @@
 		<% end %>
 	</div>
 </div>
+
+
