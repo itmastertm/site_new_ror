@@ -74,16 +74,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
                   <li class="nav-item">
-                    <a class="nav-link link text-white text-primary display-4" href="index.html#content14-r" aria-expanded="false">О КОМПАНИИ</a>
+                    <%= link_to root_path + '#content14-r', :class => "nav-link link text-white text-primary display-4" do %>
+                      
+                      О КОМПАНИИ
+                    <% end %>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="true" data-toggle="dropdown-submenu">ДЕЯТЕЛЬНОСТЬ</a>
                     <div class="dropdown-menu">
                       <% @activities.each do |link| %>
                         <%= link_to "#{link.name_ru}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-      <%= link_to "#{link.name_ru}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'ru' %>
-      <%= link_to "#{link.name_en}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'en' %>
-      <%= link_to "#{link.name_tm}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'tm' %>
+                        <%= link_to "#{link.name_ru}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'ru' %>
+                        <%= link_to "#{link.name_en}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'en' %>
+                        <%= link_to "#{link.name_tm}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'tm' %>
                       <% end %>  
                     </div>
                   </li>
@@ -99,17 +102,38 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link text-white text-primary display-4" href="index.html#gallery2-m" aria-expanded="false">ПАРТНЁРЫ</a>
+                    <%= link_to root_path + '#gallery2-m', :class => "nav-link link text-white text-primary display-4" do %>
+                      
+                      ПАРТНЁРЫ
+                    <% end %>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="false" data-toggle="dropdown-submenu">СВЯЗАТЬСЯ&nbsp; С НАМИ</a>
                     <div class="dropdown-menu">
-                      <a class="text-white text-primary dropdown-item display-4" href="/#form5-u" aria-expanded="false">
-                        <span class="socicon socicon-outlook mbr-iconfont mbr-iconfont-btn"></span>НАПИШИТЕ НАМ
-                      </a>
+                    <%= link_to root_path + '#form5-u', :class => "text-white text-primary dropdown-item display-4" do %>
+                      <span class="socicon socicon-outlook mbr-iconfont mbr-iconfont-btn"></span>
+                      НАПИШИТЕ НАМ
+                    <% end %>
                     <a class="text-white text-primary dropdown-item display-4" href="index.html#form5-u" aria-expanded="false">
                       <span class="socicon socicon-viber mbr-iconfont mbr-iconfont-btn"></span>НАШИ КОНТАКТЫ
                     </a>
+                   <li class="nav-item">
+                  <%= link_to url_for(locale: :tm) do %>
+                      <%= image_tag "/images/tm.png", style: "width: 25px; margin-right: 10px"%>
+                    <% end %> 
+                  </li>
+                   <li class="nav-item">
+                   <%= link_to url_for(locale: :en) do %>
+                      <%= image_tag "/images/en.png", style: "width: 25px; margin-right: 10px" %>
+                    <% end %>
+                  </li>
+                   <li class="nav-item">
+                   <%= link_to url_for(locale: :ru) do %>
+                      <%= image_tag "/images/ru.png", style: "width: 25px; margin-right: 10px" %>
+                    <% end %>
+                  </li>    
+                
+
                     </div>
                   </li>
                 </ul>
@@ -127,4 +151,5 @@
 </html>
   
 
- 
+      
+
