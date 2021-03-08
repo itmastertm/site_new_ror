@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ru_name: MyString
+  en_name: MyString
+  tm_name: MyString
+  ru_body: MyText
+  en_body: MyText
+  tm_body: MyText
+  product: one
+
+two:
+  ru_name: MyString
+  en_name: MyString
+  tm_name: MyString
+  ru_body: MyText
+  en_body: MyText
+  tm_body: MyText
+  product: two

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_03_104820) do
+ActiveRecord::Schema.define(version: 2021_03_08_213024) do
 
   create_table "abouts", force: :cascade do |t|
     t.string "name_ru"
@@ -61,6 +61,19 @@ ActiveRecord::Schema.define(version: 2021_03_03_104820) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "activitycontents", force: :cascade do |t|
+    t.string "ru_name"
+    t.string "en_name"
+    t.string "tm_name"
+    t.text "ru_body"
+    t.text "en_body"
+    t.text "tm_body"
+    t.integer "activity_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["activity_id"], name: "index_activitycontents_on_activity_id"
+  end
+
   create_table "partners", force: :cascade do |t|
     t.string "name_ru"
     t.string "name_en"
@@ -73,6 +86,19 @@ ActiveRecord::Schema.define(version: 2021_03_03_104820) do
     t.text "tm_body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "productcontents", force: :cascade do |t|
+    t.string "ru_name"
+    t.string "en_name"
+    t.string "tm_name"
+    t.text "ru_body"
+    t.text "en_body"
+    t.text "tm_body"
+    t.integer "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_productcontents_on_product_id"
   end
 
   create_table "products", force: :cascade do |t|

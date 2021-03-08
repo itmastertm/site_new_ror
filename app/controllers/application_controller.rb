@@ -22,5 +22,7 @@ class ApplicationController < ActionController::Base
 		@activities = Activity.all
 		@products = Product.all
 		@partners = Partner.all
+		
+		
 	end
 end
