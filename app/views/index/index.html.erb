@@ -94,10 +94,11 @@
             
         </div>
         <div class="row mt-4">
+            <% @partners.each do |partner| %>
             <div class="item features-image сol-12 col-md-6 col-lg-3">
                 <div class="item-wrapper">
                     <div class="item-img">
-                        <img src="assets/images/features1.jpg">
+                        <%= image_tag partner.image %>
                     </div>
                     <div class="item-content">
                         
@@ -105,74 +106,18 @@
                         
                     </div>
                     <div class="mbr-section-btn item-footer mt-2">
-                        <a href="" class="btn btn-primary item-btn display-7" target="_blank">Start
-                            Now!</a>
+                        <%= link_to "#{partner.name_ru}", partner_path(partner), :class => "btn btn-primary item-btn display-7", :target => "_blank" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                        <%= link_to "#{partner.name_ru}", partner_path(partner), :class => "btn btn-primary item-btn display-7", :target => "_blank" if params[:locale] == 'ru' %>
+                        <%= link_to "#{partner.name_en}", partner_path(partner), :class => "btn btn-primary item-btn display-7", :target => "_blank" if params[:locale] == 'en' %>
+                        <%= link_to "#{partner.name_tm}", partner_path(partner), :class => "btn btn-primary item-btn display-7", :target => "_blank" if params[:locale] == 'tm' %>
+                      
                     </div>
                 </div>
             </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-3">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="assets/images/features2.jpg">
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a href="" class="btn btn-primary item-btn display-7" target="_blank">Start
-                            Now!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-3">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="assets/images/features3.jpg">
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a href="" class="btn btn-primary item-btn display-7" target="_blank">Start
-                            Now!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-3">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="assets/images/features4.jpg" alt="" title="">
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a href="" class="btn btn-primary item-btn display-7" target="_blank">Start
-                            Now!</a>
-                    </div>
-                </div>
-            </div><div class="item features-image сol-12 col-md-6 col-lg-3">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="assets/images/-1-201x208.png" alt="" title="">
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a href="" class="btn btn-primary item-btn display-7" target="_blank">Start
-                            Now!</a>
-                    </div>
-                </div>
-            </div>
+            <% end %>
+            
+            
+          
         </div>
     </div>
 </section>
