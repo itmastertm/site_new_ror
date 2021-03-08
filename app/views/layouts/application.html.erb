@@ -30,6 +30,21 @@
   <link rel="preload" as="style" href="/assets/mobirise/css/mbr-additional.css">
   <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css">
 
+<script src="/assets/web/assets/jquery/jquery.min.js"></script>  
+<script src="/assets/popper/popper.min.js"></script>  
+<script src="/assets/tether/tether.min.js"></script>  
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>  
+<script src="/assets/smoothscroll/smooth-scroll.js"></script>  
+<script src="/assets/viewportchecker/jquery.viewportchecker.js"></script>  
+<script src="/assets/dropdown/js/nav-dropdown.js"></script>  
+<script src="/assets/dropdown/js/navbar-dropdown.js"></script>  
+<script src="/assets/touchswipe/jquery.touch-swipe.min.js"></script>  
+<script src="/assets/parallax/jarallax.min.js"></script>  
+<script src="/assets/formstyler/jquery.formstyler.js"></script>  
+<script src="/assets/formstyler/jquery.formstyler.min.js"></script>  
+<script src="/assets/datepicker/jquery.datetimepicker.full.js"></script>  
+<script src="/assets/theme/js/script.js"></script>  
+<script src="/assets/formoid/formoid.min.js"></script>   
 
 
 
@@ -42,11 +57,11 @@
         <div class="container-fluid">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="/">
-                        <img src="/assets/images/-1-121x125.png" alt="Mobirise" style="height: 8rem;">
-                    </a>
+                    <%= link_to root_path  do %>
+                      <%= image_tag "/assets/images/-1-121x125.png", :style => "height: 8rem;" %>
+                    <% end %>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white text-primary display-5" href="/">HEYKELLI DIYAR</a></span>
+                <span class="navbar-caption-wrap"><%= link_to "HEYKELLI DIYAR", root_path, :class => "navbar-caption text-white text-primary display-5" %></span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -88,9 +103,10 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="false" data-toggle="dropdown-submenu">СВЯЗАТЬСЯ&nbsp; С НАМИ</a>
-                    <div class="dropdown-menu"><a class="text-white text-primary dropdown-item display-4" href="index.html#form5-u" aria-expanded="false">
-                      <span class="socicon socicon-outlook mbr-iconfont mbr-iconfont-btn"></span>НАПИШИТЕ НАМ
-                    </a>
+                    <div class="dropdown-menu">
+                      <a class="text-white text-primary dropdown-item display-4" href="/#form5-u" aria-expanded="false">
+                        <span class="socicon socicon-outlook mbr-iconfont mbr-iconfont-btn"></span>НАПИШИТЕ НАМ
+                      </a>
                     <a class="text-white text-primary dropdown-item display-4" href="index.html#form5-u" aria-expanded="false">
                       <span class="socicon socicon-viber mbr-iconfont mbr-iconfont-btn"></span>НАШИ КОНТАКТЫ
                     </a>
