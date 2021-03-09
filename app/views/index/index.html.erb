@@ -85,41 +85,29 @@
     </div>
 </section>
 
-<section class="gallery2 cid-sqScx3YXVj" id="gallery2-m">
+<section class="gallery2" id="gallery2-m" style="background-image: url('/images/5084287.jpg')">
+    <br><br>
     
-    <div class="mbr-overlay"></div>
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>НАШИ ПАРТНЁРЫ</strong></h4>
-            
-        </div>
-        <div class="row mt-4">
-            <% @partners.each do |partner| %>
-            <div class="item features-image сol-12 col-md-6 col-lg-3">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <%= image_tag partner.image %>
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <%= link_to "#{partner.name_ru}", partner_path(partner), :class => "btn btn-primary item-btn display-7", :target => "_blank" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-                        <%= link_to "#{partner.name_ru}", partner_path(partner), :class => "btn btn-primary item-btn display-7", :target => "_blank" if params[:locale] == 'ru' %>
-                        <%= link_to "#{partner.name_en}", partner_path(partner), :class => "btn btn-primary item-btn display-7", :target => "_blank" if params[:locale] == 'en' %>
-                        <%= link_to "#{partner.name_tm}", partner_path(partner), :class => "btn btn-primary item-btn display-7", :target => "_blank" if params[:locale] == 'tm' %>
-                      
-                    </div>
-                </div>
+   <div class="container">
+    <div class="row">
+        <% @partners.each do |partner| %>
+        <div class="col-3 ">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 250px">
+                <p align="center"><%= image_tag partner.image, style: "width: 150px; height: 150px"%></p>
+                <div class="card-body">
+                    <h5 align="center" class="card-title" style="height: 30px">
+                        <%= "#{partner.name_ru}" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                        <%= "#{partner.name_ru}" if params[:locale] == 'ru' %>
+                        <%= "#{partner.name_en}" if params[:locale] == 'en' %>
+                        <%= "#{partner.name_tm}" if params[:locale] == 'tm' %>
+
+                    </h5>   
+                </div>  
             </div>
-            <% end %>
-            
-            
-          
         </div>
+        <% end %>
     </div>
+</div>
 </section>
 
 <section class="form5 cid-sqUdPtIqyQ" id="form5-u">
@@ -171,7 +159,7 @@
             <div class="col-md-1 col-6">
                 <div class="media-wrap">
                     <a href="https://mobirise.co/">
-                        <img src="/assets/images/-1-201x208.png" alt="Mobirise">
+                        <img src="/assets/images/-1-121x125.png" alt="Mobirise">
                     </a>
                 </div>
             </div>
@@ -195,7 +183,7 @@
             <div class="media-container-row">
                 <div class="col-md-6 copyright">
                     <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2025 Mobirise - All Rights Reserved
+                        
                     </p>
                 </div>
                 <div class="col-md-6">
