@@ -1,4 +1,4 @@
-<section id="top-1" hidden><a href="https://mobirise.site"></a>
+<!--<section id="top-1" hidden><a href="https://mobirise.site"></a>
 
 <script src="/assets/web/assets/jquery/jquery.min.js"></script>  
 <script src="/assets/popper/popper.min.js"></script>  
@@ -13,4 +13,38 @@
 <script src="/assets/formstyler/jquery.formstyler.min.js"></script>  
 <script src="/assets/datepicker/jquery.datetimepicker.full.js"></script>  
 <script src="/assets/theme/js/script.js"></script>  
-<script src="/assets/formoid/formoid.min.js"></script> 
+<script src="/assets/formoid/formoid.min.js"></script> -->
+<section class="gallery2" id="gallery2-m" style="background-image: url('/images/123.jpg')">
+</br></br></br></br></br></br></br></br></br>
+
+
+  <div class="container">
+  <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid"> 
+    <div class="dragArea row">
+      <strong>
+        <center>
+          <h1>
+    <%= t('form.formname') %>
+          </h1>
+    
+            <%= simple_form_for @contact, :html => {:class => 'col-md col-sm-12 form-group' } do |f| %>
+              <%= f.input_field :name, :required => true, :class => "form-control", placeholder: t('form.name'), :style => "font-size: 2.75; font-family: 'Jost', sans-serif; font-weight: bold" %>
+              <br>
+              <%= f.input_field :email, :required => true, :class => "form-control", placeholder: "E-Mail", :style => "font-size: 2.75; font-family: 'Jost', sans-serif; font-weight: bold" %>
+              <br>
+              <%= f.input_field :message, :as => :text, :required => true, :class => "form-control", style: 'height: 200px', placeholder: t('form.message'), :style => "font-size: 2.75; font-family: 'Jost', sans-serif; font-weight: bold" %>
+             
+      
+            <div>
+              </br>
+              <%= f.button :submit, t('index.send'), :class => 'btn btn-success', style: 'width: 300px; border-radius: 30px' %>
+            </div>
+            <% end %>
+
+        
+        </center>
+      </strong>  
+    </div>  
+  </div>    
+</div>
+</section>

@@ -291,3 +291,4 @@ ru:
   form:
     message: "Текст сообщения"
     name: "Имя"            
+    formname: "НАПИШИТЕ НАМ"

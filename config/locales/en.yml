@@ -13,4 +13,5 @@ en:
     write: "WRITE TO US"
   form:
     message: "Text"
-    name: "Name"       
+    name: "Name"     
+    formname: "WRITE TO US"  
