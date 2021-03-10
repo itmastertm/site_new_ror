@@ -83,7 +83,7 @@
     </div>
 </section>
 
-<section class="gallery2" id="gallery2-m" style="background-image: url('/images/5084287.jpg')">
+<section class="gallery2" id="gallery2-m" style="background-image: url('/images/mbr-1920x1358.png')">
     <br><br>
     <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2" style="color: white"><strong><em><%= t('index.partners') %></em></strong></h3>
     <br><br>        
@@ -94,7 +94,7 @@
             <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 250px">
                 <p align="center"><%= image_tag partner.image, style: "width: 180px; height: 150px"%></p>
                 <div class="card-body">
-                    <h5 align="center" class="card-title" style="height: 30px">
+                    <h5 align="center" class="card-title" style="height: 25px">
                         <%= "#{partner.name_ru}" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
                         <%= "#{partner.name_ru}" if params[:locale] == 'ru' %>
                         <%= "#{partner.name_en}" if params[:locale] == 'en' %>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="dragArea row">
                         <div class="col-md col-sm-12 form-group" data-for="name">
-                            <input type="text" name="name" placeholder="<%= t('form.message')%>" data-form-field="name" class="form-control" value="" id="name-form5-u">
+                            <input type="text" name="name" placeholder="<%= t('form.name')%>" data-form-field="name" class="form-control" value="" id="name-form5-u">
                         </div>
                         <div class="col-md col-sm-12 form-group" data-for="email">
                             <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form5-u">
