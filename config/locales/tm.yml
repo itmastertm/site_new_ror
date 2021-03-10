@@ -1,1 +1,16 @@
 tm:
+  layout:
+    about: "KOMPANIÝA BARADA"
+    activity: "GÖRNÜŞ"
+    partners: "HYZMATDAŞLAR"
+    trade: "LOMAÝ WE BÖLEKLEÝIN SÖWDA"
+    contacts: "HABARLAŞMAK"
+    write: "E-MAIL ARKALY"
+    connect: "BILEN BAGLANYŞYN"
+  index:  
+    partners: "HYZMATDAŞLARYMYZ"
+    send: "UGRATMAK"
+    write: "BIZI YAZY"
+  form:
+    message: "Habar"
+    name: "Ady"           

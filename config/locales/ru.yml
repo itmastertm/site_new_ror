@@ -273,3 +273,21 @@ ru:
       long: "%d %B %Y, %H:%M"
       short: "%d %b, %H:%M"
     pm: вечера
+
+  
+
+  layout:
+    about: "О КОМПАНИИ"
+    activity: "ДЕЯТЕЛЬНОСТЬ"
+    partners: "ПАРТНЁРЫ"
+    trade: "ТОРГОВЛЯ, ОПТОВАЯ И РОЗНИЧНАЯ"
+    contacts: "КОНТАКТЫ"
+    write: "ПО E-MAIL"
+    connect: "СВЯЗАТЬСЯ С НАМИ"
+  index:  
+    partners: "НАШИ ПАРТНЁРЫ"
+    send: "ОТПРАВИТЬ"
+    write: "НАПИШИТЕ НАМ"
+  form:
+    message: "Текст сообщения"
+    name: "Имя"            

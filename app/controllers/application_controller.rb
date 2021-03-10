@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
 		@activities = Activity.all
 		@products = Product.all
 		@partners = Partner.all
-		
+		@carousel = Carousel.all
 		
 	end
 end

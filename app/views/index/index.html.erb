@@ -4,7 +4,9 @@
         <ol class="carousel-indicators">
             <li data-slide-to="0" class="active" data-target="#sqUvboAHsk"></li>
             <li data-slide-to="1" data-target="#sqUvboAHsk"></li>
-            <li data-slide-to="2" data-target="#sqUvboAHsk"></li><li data-slide-to="3" data-target="#sqUvboAHsk"></li>
+            <li data-slide-to="2" data-target="#sqUvboAHsk"></li>
+            <li data-slide-to="3" data-target="#sqUvboAHsk"></li>
+            <li data-slide-to="4" data-target="#sqUvboAHsk"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item slider-image item active">
@@ -16,34 +18,26 @@
                         
                     </div>
                 </div>
-            </div><div class="carousel-item slider-image item">
+            </div>
+            <% @carousel.each do |slide| %>
+            <div class="carousel-item slider-image item">
                 <div class="item-wrapper">
-                    <img class="d-block w-100" src="/assets/images/mbr-1-383x287.jpg" data-slide-to="1">
+                    <%= image_tag slide.image %>
                     
                     <div class="carousel-caption">
-                        <h5 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>ПРОЕКТНЫЕ И ДИЗАЙНЕРСКИЕ УСЛУГИ</strong></h5>
-                        
-                    </div>
-                </div>
-            </div><div class="carousel-item slider-image item">
-                <div class="item-wrapper">
-                    <img class="d-block w-100" src="/assets/images/mbr-1900x1415.jpg" data-slide-to="2">
-                    
-                    <div class="carousel-caption">
-                        <h5 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>АРЕНДА АВТОТЕХНИКИ</strong></h5>
-                        
-                    </div>
-                </div>
-            </div><div class="carousel-item slider-image item">
-                <div class="item-wrapper">
-                    <img class="d-block w-100" src="/assets/images/mbr-1900x1425.jpg" data-slide-to="3">
-                    
-                    <div class="carousel-caption">
-                        <h5 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>ЛОГИСТИЧЕСКИЕ УСЛУГИ</strong></h5>
+                        <h5 class="mbr-section-subtitle mbr-fonts-style display-5">
+                        <strong>
+                        <%= "#{slide.ru}" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                        <%= "#{slide.ru}" if params[:locale] == 'ru' %>
+                        <%= "#{slide.en}" if params[:locale] == 'en' %>
+                        <%= "#{slide.tm}" if params[:locale] == 'tm' %>
+                            
+                        </strong></h5>
                         
                     </div>
                 </div>
             </div>
+            <% end %>
             
             
         </div>
@@ -65,35 +59,40 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12">
-                    <h3 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>О НАС</strong></h3>
-                <ul class="list mbr-fonts-style display-7">Индивидуальное Предприятие «Хейкелли Дияр» основано в 2010 году
-<div>и зарегистрировано в соответствии с Законодательством Туркменистана.
-</div><div>ИП «Хейкелли Дияр» динамично развивающаяся компания,
-</div><div>специализируется на удовлетворении потребностей и обеспечение
-</div><div>необходимой продукцией государственных предприятий и частных структур
-</div><div>Туркменистана.
-</div><div>В сферу бизнес-интересов компании входит также, оказание широкого
-</div><div>спектра услуг в строительной и логистической сфере.
-</div><div>ИП «Хейкелли Дияр» включает в себя комплекс направлений
-</div><div>необходимых для всестороннего и эффективного развития бизнеса, в том
-</div><div>числе оказание услуг для иностранных компаний заинтересованных в
-</div><div>налаживании и развитие бизнеса в Туркменистане.
-</div><div>Мы позиционируем себя, как надежного и честного партнера, который
-</div><div>всегда на высоком уровне выполняет принятые на себя обязательства.</div></ul>
-            </div>
+                <% @abouts.each do |about| %>
+                    <h1 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>
+                        
+                        <%= simple_format about.name_ru, :style => "font-size: 2.75rem; font-family: 'Jost', sans-serif; font-weight: bold" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                        <%= simple_format about.name_ru, :style => "font-size: 2.75; font-family: 'Jost', sans-serif; font-weight: bold" if params[:locale] == 'ru' %>
+                        <%= simple_format about.name_en, :style => "font-size: 2.75; font-family: 'Jost', sans-serif; font-weight: bold" if params[:locale] == 'en' %>
+                        <%= simple_format about.name_tm, :style => "font-size: 2.75; font-family: 'Jost', sans-serif; font-weight: bold" if params[:locale] == 'tm' %>
+
+                    </strong></h1>
+                <ul class="list mbr-fonts-style display-7">
+                    <div>
+                        
+                    
+                        <%= simple_format about.ru_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                        <%= simple_format about.ru_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'ru' %>
+                        <%= simple_format about.en_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'en' %>
+                        <%= simple_format about.tm_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'tm' %>
+                    <% end %>
+                    
+                </div>
         </div>
     </div>
 </section>
 
 <section class="gallery2" id="gallery2-m" style="background-image: url('/images/5084287.jpg')">
     <br><br>
-    
+    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2" style="color: white"><strong><em><%= t('index.partners') %></em></strong></h3>
+    <br><br>        
    <div class="container">
     <div class="row">
         <% @partners.each do |partner| %>
-        <div class="col-3 ">
+        <div class="col-4">
             <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 250px">
-                <p align="center"><%= image_tag partner.image, style: "width: 150px; height: 150px"%></p>
+                <p align="center"><%= image_tag partner.image, style: "width: 180px; height: 150px"%></p>
                 <div class="card-body">
                     <h5 align="center" class="card-title" style="height: 30px">
                         <%= "#{partner.name_ru}" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
@@ -115,7 +114,7 @@
     <div class="mbr-overlay"></div>
     <div class="container">
         <div class="mbr-section-head">
-            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong><em>НАПИШИТЕ НАМ</em></strong></h3>
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong><em><%= t('index.write') %></em></strong></h3>
             
         </div>
         <div class="row justify-content-center mt-4">
@@ -129,17 +128,17 @@
                     </div>
                     <div class="dragArea row">
                         <div class="col-md col-sm-12 form-group" data-for="name">
-                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form5-u">
+                            <input type="text" name="name" placeholder="<%= t('form.message')%>" data-form-field="name" class="form-control" value="" id="name-form5-u">
                         </div>
                         <div class="col-md col-sm-12 form-group" data-for="email">
                             <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form5-u">
                         </div>
                         
                         <div class="col-12 form-group" data-for="textarea">
-                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-form5-u"></textarea>
+                            <textarea name="textarea" placeholder="<%= t('form.message')%>" data-form-field="textarea" class="form-control" id="textarea-form5-u"></textarea>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
-                            <button type="submit" class="btn btn-primary display-4">Send message</button>
+                            <button type="submit" class="btn btn-primary display-4" style="width: 150px"><%= t('index.send') %></button>
                         </div>
                     </div>
                 </form>
