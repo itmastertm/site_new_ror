@@ -31,9 +31,11 @@
                         <h6 class="item-title" style="font-size: 15px">
                             <center>
                             <strong>
-                                <%= "#{content.ru_name}" if params[:locale] == 'ru' %>
-                                <%= "#{content.en_name}" if params[:locale] == 'en' %>
-                                <%= "#{content.tm_name}" if params[:locale] == 'tm' %>
+
+                                <%= link_to "#{content.name_ru}", product_path(content), :class => "text-black dropdown-item", :style => "font-size: 15px; font-color: black" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                                <%= link_to "#{content.ru_name}", product_path(content), :class => "text-black dropdown-item", :style => "font-size: 15px: font-color: black" if params[:locale] == 'ru' %>
+                                <%= link_to "#{content.en_name}", product_path(content), :class => "text-black dropdown-item", :style => "font-size: 15px; font-color: black" if params[:locale] == 'en' %>
+                                <%= link_to "#{content.tm_name}", product_path(content), :class => "text-black dropdown-item", :style => "font-size: 15px; font-color: black" if params[:locale] == 'tm' %>
                             </center>    
                             </strong>
                         </h6>

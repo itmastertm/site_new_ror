@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 	  resources :products, only: :show
 	  resources :partners, only: [:index, :show]
     resources :trades, only: :show
-	  
+	  resources :activitycontents, only: :show
 
 
   match '/contacts',     to: 'contacts#new',             via: 'get'

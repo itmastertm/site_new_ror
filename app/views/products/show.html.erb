@@ -7,48 +7,35 @@
 
 
 <section class="gallery3 cid-sqU0GnYQ0E" id="gallery3-z">
-    
-    
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+      <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
                 <strong>
-                  <%= "#{@trade.name_ru}" if params[:locale] == 'ru' %>
-                  <%= "#{@trade.name_en}" if params[:locale] == 'en' %>
-                  <%= "#{@tarde.name_tm}" if params[:locale] == 'tm' %>                
+                  <%= "#{@product.ru_name}" if params[:locale] == 'ru' %>
+                  <%= "#{@product.en_name}" if params[:locale] == 'en' %>
+                  <%= "#{@product.tm_name}" if params[:locale] == 'tm' %>                
                 </strong>
               </h4>
-            <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5"></h5>
-        </div>
-        <div class="row mt-4">
-            <% @trade.product.each do |content| %>
-            <div class="item features-image сol-12 col-md-6 col-lg-4">
-                <div class="item-wrapper shadow p-3 mb-5 bg-body rounded">
-                    <div class="item-img">
-                        <%= image_tag content.image, :style => "width: 315px; height: 180px" %>
-                    </div>
-                    <div class="item-content">
-                        <h6 class="item-title" style="font-size: 15px">
-                            <center>
-                            <strong>
-                                <%= "#{content.ru_name}" if params[:locale] == 'ru' %>
-                                <%= "#{content.en_name}" if params[:locale] == 'en' %>
-                                <%= "#{content.tm_name}" if params[:locale] == 'tm' %>
-                            </center>    
-                            </strong>
-                        </h6>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <% end %>
-   
-          
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+        <div class="shadow p-3 mb-5 bg-body rounded">
+            <%= image_tag @product.image, :style => "width: 315px; height: 400px" %>
+        </div>    
+    </div>
+    <div class="col-8">
+        <div class="shadow p-3 mb-5 bg-body rounded">
+            <center> 
+              <%= simple_format @product.ru_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+              <%= simple_format @product.ru_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'ru' %>
+              <%= simple_format @product.en_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'en' %>
+              <%= simple_format @product.tm_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'tm' %>
+            </center>
         </div>
     </div>
-</section
+  </div>
+</div>
+    
+
+</section>
 <br><br><br><br><br><br><br>
 <section class="footer5 cid-sqTKvdBvWV" once="footers" id="footer5-x">
 
@@ -114,3 +101,4 @@
 <script src="/assets/datepicker/jquery.datetimepicker.full.js"></script>  
 <script src="/assets/theme/js/script.js"></script>  
 <script src="/assets/formoid/formoid.min.js"></script>  
+    

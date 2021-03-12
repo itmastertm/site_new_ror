@@ -1,0 +1,95 @@
+<section class="gallery3 cid-sqU0GnYQ0E" id="gallery3-z">
+      <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>
+                  <%= "#{@activitycontent.ru_name}" if params[:locale] == 'ru' %>
+                  <%= "#{@activitycontent.en_name}" if params[:locale] == 'en' %>
+                  <%= "#{@activitycontent.tm_name}" if params[:locale] == 'tm' %>                
+                </strong>
+              </h4>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+        <div class="shadow p-3 mb-5 bg-body rounded">
+            <%= image_tag @activitycontent.image, :style => "width: 315px; height: 400px" %>
+        </div>    
+    </div>
+    <div class="col-8">
+        <div class="shadow p-3 mb-5 bg-body rounded">
+            <center> 
+              <%= simple_format @activitycontent.ru_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+              <%= simple_format @activitycontent.ru_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'ru' %>
+              <%= simple_format @activitycontent.en_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'en' %>
+              <%= simple_format @activitycontent.tm_body, :style => "font-size: 22px; font-family: 'Jost', sans-serif; line-height: 1.5;" if params[:locale] == 'tm' %>
+            </center>
+        </div>
+    </div>
+  </div>
+</div>
+    
+
+</section>
+<br><br><br><br><br><br><br>
+<section class="footer5 cid-sqTKvdBvWV" once="footers" id="footer5-x">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-1 col-6">
+                <div class="media-wrap">
+                    <a href="https://mobirise.co/">
+                        <img src="/assets/images/-1-121x125.png" alt="Mobirise">
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-6">
+                <p class="mbr-text align-right links mbr-fonts-style display-7">
+                    <a href="#" class="text-black">About</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-black">Terms</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-black">Careers</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-black">Contact</a>
+                </p>
+            </div>
+        </div>
+        <!-- <div class="media-container-row">
+            <div class="col-md-12"> -->
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row">
+                <div class="col-md-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            <!-- </div>
+            </div> -->
+        </div>
+
+    </div>
+</section>
+</section>
+<section id="top-1" hidden><a href="https://mobirise.site"></a>
+<script src="/assets/web/assets/jquery/jquery.min.js"></script>  
+<script src="/assets/popper/popper.min.js"></script>  
+<script src="/assets/tether/tether.min.js"></script>  
+ 
+<script src="/assets/smoothscroll/smooth-scroll.js"></script>  
+<script src="/assets/viewportchecker/jquery.viewportchecker.js"></script>  
+
+<script src="/assets/touchswipe/jquery.touch-swipe.min.js"></script>  
+<script src="/assets/parallax/jarallax.min.js"></script>  
+<script src="/assets/formstyler/jquery.formstyler.js"></script>  
+<script src="/assets/formstyler/jquery.formstyler.min.js"></script>  
+<script src="/assets/datepicker/jquery.datetimepicker.full.js"></script>  
+<script src="/assets/theme/js/script.js"></script>  
+<script src="/assets/formoid/formoid.min.js"></script>  

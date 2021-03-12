@@ -1,0 +1,2 @@
+module ActivitycontentsHelper
+end
