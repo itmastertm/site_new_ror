@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_10_002121) do
+ActiveRecord::Schema.define(version: 2021_03_12_201458) do
 
   create_table "abouts", force: :cascade do |t|
     t.string "name_ru"
@@ -96,26 +96,23 @@ ActiveRecord::Schema.define(version: 2021_03_10_002121) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "productcontents", force: :cascade do |t|
+  create_table "products", force: :cascade do |t|
     t.string "ru_name"
     t.string "en_name"
     t.string "tm_name"
     t.text "ru_body"
     t.text "en_body"
     t.text "tm_body"
-    t.integer "product_id"
+    t.integer "trade_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["product_id"], name: "index_productcontents_on_product_id"
+    t.index ["trade_id"], name: "index_products_on_trade_id"
   end
 
-  create_table "products", force: :cascade do |t|
+  create_table "trades", force: :cascade do |t|
     t.string "name_ru"
     t.string "name_en"
     t.string "name_tm"
-    t.string "ru_title"
-    t.string "en_title"
-    t.string "tm_title"
     t.text "ru_body"
     t.text "en_body"
     t.text "tm_body"

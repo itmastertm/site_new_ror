@@ -54,7 +54,7 @@
   <body>
   <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
     
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="background-image: url('/images/navi.png'); height: 150px">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="background-image: url('/images/navi.png'); height: 150px;background-color: rgba(121,73,140,1);">
         <div class="container-fluid">
             <div class="navbar-brand">
                
@@ -76,8 +76,8 @@
                     <span></span>
                 </div>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true" style="background-color: rgba(121,73,140,1);">
                   <li class="nav-item">
                     <%= link_to root_path + '#content14-r', :class => "nav-link link text-white" do %>
                       
@@ -98,11 +98,11 @@
                    <li class="nav-item dropdown">
                     <a class="nav-link link text-white dropdown-toggle" href="#" aria-expanded="true" data-toggle="dropdown-submenu"><%= t('layout.trade') %></a>
                     <div class="dropdown-menu">
-                      <% @products.each do |link| %>
-                      <%= link_to "#{link.name_ru}", product_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-                      <%= link_to "#{link.name_ru}", product_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'ru' %>
-                      <%= link_to "#{link.name_en}", product_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'en' %>
-                      <%= link_to "#{link.name_tm}", product_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'tm' %>
+                      <% @trades.each do |link| %>
+                      <%= link_to "#{link.name_ru}", trade_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                      <%= link_to "#{link.name_ru}", trade_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'ru' %>
+                      <%= link_to "#{link.name_en}", trade_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'en' %>
+                      <%= link_to "#{link.name_tm}", trade_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'tm' %>
                       <% end %>
                     </div>
                   </li>
@@ -121,7 +121,7 @@
                     <% end %>
               <li class="nav-item dropdown">
                         <a class="nav-link link text-white dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu">
-                          <span class="socicon socicon-internet mbr-iconfont mbr-iconfont-btn " style="font-size: 15px;"></span>
+                          <span class="socicon socicon-internet mbr-iconfont mbr-iconfont-btn " style="font-size: 20px;"></span>
                         </a>
 
                       <div class="dropdown-menu">

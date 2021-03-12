@@ -711,8 +711,6 @@ a {
 .cid-s48OLK6784 {
   z-index: 1000;
   width: 100%;
-  position: relative;
-  min-height: 60px;
 }
 .cid-s48OLK6784 nav.navbar {
   position: fixed;
@@ -805,7 +803,7 @@ a {
   min-height: 77px;
   transition: all .3s;
   border-bottom: 1px solid transparent;
-  background: #79498c;
+  background: rgba(121, 73, 140, 0.9);
 }
 .cid-s48OLK6784 .navbar:not(.navbar-short) {
   border-bottom: 1px solid #e6e6e6;
@@ -1051,21 +1049,21 @@ a {
   }
 }
 .cid-sqUhtftfxs {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 9rem;
+  padding-bottom: 0rem;
   background-color: #fafafa;
 }
 .cid-sqUhtftfxs .carousel {
+  height: 800px;
+}
+.cid-sqUhtftfxs .carousel img {
   width: 100%;
-}
-.cid-sqUhtftfxs .carousel-inner {
-  display: flex;
-  align-content: center;
-  align-items: center;
-}
-.cid-sqUhtftfxs .carousel-item img {
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
+}
+.cid-sqUhtftfxs .carousel-item,
+.cid-sqUhtftfxs .carousel-inner {
+  height: 100%;
 }
 .cid-sqUhtftfxs .mbr-overlay {
   z-index: 1;
@@ -1378,8 +1376,6 @@ a {
 .cid-s48OLK6784 {
   z-index: 1000;
   width: 100%;
-  position: relative;
-  min-height: 60px;
 }
 .cid-s48OLK6784 nav.navbar {
   position: fixed;
@@ -1472,7 +1468,7 @@ a {
   min-height: 77px;
   transition: all .3s;
   border-bottom: 1px solid transparent;
-  background: #79498c;
+  background: rgba(121, 73, 140, 0.9);
 }
 .cid-s48OLK6784 .navbar:not(.navbar-short) {
   border-bottom: 1px solid #e6e6e6;

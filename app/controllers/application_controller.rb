@@ -23,6 +23,7 @@ class ApplicationController < ActionController::Base
 		@products = Product.all
 		@partners = Partner.all
 		@carousel = Carousel.all
+		@trades = Trade.all
 		
 	end
 end

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 	  resources :activity, only: :show
 	  resources :products, only: :show
 	  resources :partners, only: [:index, :show]
+    resources :trades, only: :show
 	  
 
 
