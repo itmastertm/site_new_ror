@@ -54,17 +54,21 @@
   <body>
   <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
     
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="background-image: url('/images/nav4.png');">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="background-image: url('/images/navi.png'); height: 150px">
         <div class="container-fluid">
             <div class="navbar-brand">
-                <span class="navbar-logo">
+               
                     <%= link_to root_path  do %>
-                      <%= image_tag "/assets/images/-1-121x125.png", :style => "height: 8rem;" %>
+                      <%= image_tag "/assets/images/-1-121x125.png", :style => "height: 110px; width: 115px; margin-bottom: 30px"%>
                     <% end %>
+              
+                <span class="navbar-caption-wrap"><%= link_to "HEYKELLI DIYAR", root_path, :class => "navbar-caption", :style => "font-family: 'BankGothic Md BT'; font-size: 50px; color: #000080; margin-bottom: 90px;"%>
+              
                 </span>
-                <span class="navbar-caption-wrap"><%= link_to "HEÝKELLI DIÝAR", root_path, :class => "navbar-caption display-5", :style => "font-family: 'BankGothic Md BT'; font-size: 30px; color: #000080; margin-bottom: 20px"%></span>
+                <p style="margin-left: -530px; font-family: 'BankGothic Md BT'; font-size: 20px; color: #000080;">individual enterprice</p>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color: red">
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -75,65 +79,65 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
                   <li class="nav-item">
-                    <%= link_to root_path + '#content14-r', :class => "nav-link link text-white text-primary display-4" do %>
+                    <%= link_to root_path + '#content14-r', :class => "nav-link link text-white" do %>
                       
                       <%= t('layout.about') %>
                     <% end %>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="true" data-toggle="dropdown-submenu"><%= t('layout.activity') %></a>
+                    <a class="nav-link link text-white dropdown-toggle" href="#" aria-expanded="true" data-toggle="dropdown-submenu"><%= t('layout.activity') %></a>
                     <div class="dropdown-menu">
                       <% @activities.each do |link| %>
-                        <%= link_to "#{link.name_ru}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-                        <%= link_to "#{link.name_ru}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'ru' %>
-                        <%= link_to "#{link.name_en}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'en' %>
-                        <%= link_to "#{link.name_tm}", activity_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'tm' %>
+                        <%= link_to "#{link.name_ru}", activity_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                        <%= link_to "#{link.name_ru}", activity_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'ru' %>
+                        <%= link_to "#{link.name_en}", activity_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'en' %>
+                        <%= link_to "#{link.name_tm}", activity_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'tm' %>
                       <% end %>  
                     </div>
                   </li>
                    <li class="nav-item dropdown">
-                    <a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="true" data-toggle="dropdown-submenu"><%= t('layout.trade') %></a>
+                    <a class="nav-link link text-white dropdown-toggle" href="#" aria-expanded="true" data-toggle="dropdown-submenu"><%= t('layout.trade') %></a>
                     <div class="dropdown-menu">
                       <% @products.each do |link| %>
-                      <%= link_to "#{link.name_ru}", product_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
-                      <%= link_to "#{link.name_ru}", product_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'ru' %>
-                      <%= link_to "#{link.name_en}", product_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'en' %>
-                      <%= link_to "#{link.name_tm}", product_path(link), :class => "text-white text-primary dropdown-item display-4" if params[:locale] == 'tm' %>
+                      <%= link_to "#{link.name_ru}", product_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] != true and params[:locale] != 'en' and params[:locale] != 'tm' and params[:locale] != 'ru' %>
+                      <%= link_to "#{link.name_ru}", product_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'ru' %>
+                      <%= link_to "#{link.name_en}", product_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'en' %>
+                      <%= link_to "#{link.name_tm}", product_path(link), :class => "text-white dropdown-item", :style => "font-size: 12px" if params[:locale] == 'tm' %>
                       <% end %>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <%= link_to root_path + '#gallery2-m', :class => "nav-link link text-white text-primary display-4" do %>
+                    <%= link_to root_path + '#gallery2-m', :class => "nav-link link text-white" do %>
                       
                       <%= t('layout.partners') %>
                     <% end %>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="false" data-toggle="dropdown-submenu"><%= t('layout.connect') %></a>
+                    <a class="nav-link link text-white dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu"><%= t('layout.connect') %></a>
                     <div class="dropdown-menu">
-                    <%= link_to new_contact_path + '#form5-u', :class => "text-white text-primary dropdown-item display-4" do %><%= t('layout.write') %>
+                    <%= link_to new_contact_path + '#form5-u', :class => "text-white dropdown-item", :style => "font-size: 12px" do %><%= t('layout.write') %>
                     <% end %>
-                    <%= link_to new_contact_path, :class => "text-white text-primary dropdown-item display-4" do %><%= t('layout.contacts') %>
+                    <%= link_to new_contact_path, :class => "text-white dropdown-item", :style => "font-size: 12px" do %><%= t('layout.contacts') %>
                     <% end %>
               <li class="nav-item dropdown">
-                        <a class="nav-link link text-white text-primary dropdown-toggle display-4" href="#" aria-expanded="false" data-toggle="dropdown-submenu">
-                          <span class="socicon socicon-internet mbr-iconfont mbr-iconfont-btn " style="font-size: 28px;"></span>
+                        <a class="nav-link link text-white dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu">
+                          <span class="socicon socicon-internet mbr-iconfont mbr-iconfont-btn " style="font-size: 15px;"></span>
                         </a>
 
                       <div class="dropdown-menu">
                         
                       <%= link_to url_for(locale: :tm), :class => "btn" do %> 
-                          <%= image_tag "/images/tm.png", style: "width: 30px" %>
+                          <%= image_tag "/images/tm.png", style: "width: 20px" %>
                       <% end %>
                       
                         
                       <%= link_to url_for(locale: :en), :class => "btn" do %>
-                          <%= image_tag "/images/en.png", style: "width: 30px" %>
+                          <%= image_tag "/images/en.png", style: "width: 20px" %>
                       <% end %>
                       
                       
                       <%= link_to url_for(locale: :ru), :class => "btn" do %>
-                          <%= image_tag "/images/ru.png", style: "width: 30px" %>
+                          <%= image_tag "/images/ru.png", style: "width: 20px" %>
                       <% end %> 
                        
                      
