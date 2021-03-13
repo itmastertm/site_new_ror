@@ -72,3 +72,4 @@ gem 'tinymce-rails'
 gem 'simple_form'
 gem 'mail_form'
 gem 'recaptcha', require: 'recaptcha/rails'
+
