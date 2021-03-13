@@ -16,3 +16,5 @@ tm:
     message: "Habar"
     name: "Ady"           
     formname: "BIZI YAZY"
+  contacts:
+    formname: "ARAGATNAŞYK"

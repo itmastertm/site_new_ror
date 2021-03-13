@@ -16,3 +16,5 @@ en:
     message: "Text"
     name: "Name"     
     formname: "WRITE TO US"  
+  contacts:
+    formname: "CONTACTS"

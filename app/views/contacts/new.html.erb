@@ -1,23 +1,14 @@
-<br><br><br><br>
-<section class="gallery2" id="#form6-u" style="background-color: grey">
-  <div class="container">
-    <h2 align="center">НАШИ КОНТАКТЫ</h2>
-      <br><br><br><br><br><br><br>
-  </div>
-</section>
 
-<section class="mbr-parallax-background form5 cid-sqUdPtIqyQ" id="form5-u" style="background-image: url('/images/turkmencart2.png'); background-color: green">
+</br></br></br></br></br></br></br></br>
 
 
-
-  <div class="container">
-  </br></br></br>  
-  <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid"> 
-    <div class="dragArea row">
-      <strong>
-        <center>
-          <h1 style = "font-family: 'Tachoma'; font-size: 30px; color: #000080; margin-bottom: 20px">
+  <div class="row">
+    <div class="col">
+      <center>
+      <h1 style = "font-family: 'Tachoma'; font-size: 30px; color: #000080; margin-bottom: 20px">
+        <b>
     <%= t('form.formname') %>
+  </b>
           </h1>
     
             <%= simple_form_for @contact, :html => {:class => 'col-md col-sm-12 form-group' } do |f| %>
@@ -33,16 +24,26 @@
               <%= f.button :submit, t('index.send'), :class => 'btn btn-success', style: 'width: 300px; border-radius: 30px' %>
             </div>
             <% end %>
+          </center>
+    </div>
+    <div class="col">
+      <center>
+      <h1 style = "font-family: 'Tachoma'; font-size: 30px; color: #000080; margin-bottom: 20px">
+        <b>
+    <%= t('contacts.formname') %>
+  </b>
+          </h1>
+          <b>
+          <h2>
+          E-mail: heykellidiyar@gmail.com </br>
+          Phone/Fax: + (99312) 95-65-33, 95-54-33
+        </b>
+      </h2>
+    </div>
+  </center>
+  </div>
 
-        
-        </center>
-      </strong>  
-    </div>  
-  </div>    
-</div>
-</br></br></br></br></br></br>
-</section>
-<section class="footer5 cid-sqTKvdBvWV" once="footers" id="footer5-x">
+  <section class="footer5 cid-sqTKvdBvWV" once="footers" id="footer5-x">
 
     
 
@@ -106,3 +107,4 @@
 <script src="/assets/datepicker/jquery.datetimepicker.full.js"></script>  
 <script src="/assets/theme/js/script.js"></script>  
 <script src="/assets/formoid/formoid.min.js"></script> 
+
