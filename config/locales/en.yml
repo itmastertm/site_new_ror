@@ -6,7 +6,9 @@ en:
     trade: "PRODUCTION"
     contacts: "CONTACTS"
     write: "BY E-MAIL"
-    connect: "CONNECT WITH US" 
+    connect: "CONNECT WITH US"
+    org: "INDIVIDUAL ENTERPRICE"
+    name: "HEYKELI DIYAR"  
   index:
     partners: "OUR PARTNERS"
     send: "  SEND  "

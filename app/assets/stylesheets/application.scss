@@ -1,1 +1,12 @@
 @import "bootstrap";
+
+
+@font-face {font-family: "BankGothic Md BT";
+    src: url("/fonts/adfd298e421945768d7bf13da3ee8a45.eot"); /* IE9*/
+    src: url("/fonts/adfd298e421945768d7bf13da3ee8a45.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/adfd298e421945768d7bf13da3ee8a45.woff2") format("woff2"), /* chrome firefox */
+    url("/fonts/adfd298e421945768d7bf13da3ee8a45.woff") format("woff"), /* chrome firefox */
+    url("/fonts/adfd298e421945768d7bf13da3ee8a45.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/adfd298e421945768d7bf13da3ee8a45.svg#BankGothic Md BT") format("svg"); /* iOS 4.1- */
+
+}
